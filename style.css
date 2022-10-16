@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(230,212,212);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    background-color:rgb(49, 17, 17) ;
+    color: rgb(230,212,212);
+    align-items: center;
+    padding: 10px 10%;
+}
+header img{
+    width: 100px;
+}
+header ul{
+    display: flex;
+    float: right;
+    list-style: none;
+}
+header li{
+    margin: 0 10px;
+}
+header a{
+    text-decoration: none;
+    color:rgb(167, 120, 120);
+}
+.produtos{
+    margin: 50px 10%;
+    display: flex;
+}
+.box_produto{
+    border-color:rgb(167, 120, 120);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 20px;
+    height: 300px;
+    margin: 30px auto;
+    padding: 40px;
+    text-align: center;
+    color:rgb(167, 120, 120);
+}
+.box_produto:hover{
+    border-color:rgb(49, 17, 17);
+    color:rgb(49, 17, 17);
+
+}
+.box_produto:hover .img_produto img{
+    animation: go-back 1s infinite alternate;
+}
+@keyframes go-back {
+    from {
+    transform: translateY(10px);
+    }
+    to {
+    transform: translateX(0);
+    }
+}
+.img_produto{
+    background-color: rgb(230,212,212);
+    border-radius: 20px;
+    height: 200px;
+    padding: 10% 0;
+    margin: auto;
+}
+
+#racao{
+    margin: 50px 0;
+}
+.box_produto img{
+    width: 200px;
+}
+.sobre{
+    margin: 50px 10%;
+}
+.boxes{
+    display: flex;
+}
+.box_sobre{
+    background-color: rgb(167, 120, 120);
+    border-radius: 20px;
+    width: 200px;
+    margin: 30px auto;
+    padding: 40px;
+    
+}
+.box_sobre h2{
+    text-align: center;
+    color: rgb(49, 17, 17);
+}
+.box_sobre p{
+    color: aliceblue;
+}
+.img_sobre{
+    width: 350px;
+}
+.img_sobre img{
+    animation: go-back 1s infinite alternate;
+}
+@keyframes go-back {
+    from {
+    transform: translateY(10px);
+    }
+    to {
+    transform: translateX(0);
+    }
+}
+.titulo{
+    text-align: center;
+    color: rgb(49, 17, 17);
+    font-size: 50px;
+}
+footer{
+    padding: 10px;
+    background-color: rgb(49, 17, 17);
+    text-align: center;
+    color: rgb(167, 120, 120);
+}
+@media only screen and (max-width: 800px){
+    .titulo{
+        font-size: 25px;
+    }
+    .boxes{
+        display: block;
+    }
+    .produtos{
+        display: block;
+    }
+    .box_produto{
+        width: 200px;
+    }
+    .box_sobre{
+        width: 200px;
+    }
+}
